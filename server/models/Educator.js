@@ -6,6 +6,7 @@ const educatorSchema = new Schema({
         unique: true,
         trim: true,
     }, 
+    // do we need to make one field/property for each star or can it be left as rating?
     rating: [
         {
             userId: {
@@ -20,11 +21,7 @@ const educatorSchema = new Schema({
                 trim: true,
             },
         }
-    ], 
-    thumbsDown: [
-        {
-        }
-    ]
+    ],
    
 }
 )

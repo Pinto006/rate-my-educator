@@ -19,6 +19,16 @@ const ratingSchema = new Schema({
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
   },
+  //   ratedEducator: {
+  //     type: String,
+  //     required: true,
+  //     trim: true,
+  // }, 
+  // ratingStars: {
+  //   type: Number,
+  //   required: true,
+  //   trim: true,
+  // },
   comments: [
     {
       commentText: {
